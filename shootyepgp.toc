@@ -1,10 +1,10 @@
 ## Interface: 11200
-## Title: shootyepgp
+## Title: shootyepgp-kof
 ## Title-zhCN: shootyepgp EPGP插件
 ## Notes: Effort Points/Gear Points Loot System
 ## Notes-zhCN: 贡献点/装备点拾取制度系统
-## Author: Roadblock
-## X-Website: https://github.com/Road-block/shootyepgp/releases/latest
+## Author: rotaruandrei93
+## X-Website: https://github.com/rotaruandrei93/shootyepgp-kof
 ## X-Category: Guild
 ## X-Credits: shooty, Qcat(zhCN)
 ## Version: 3.60
