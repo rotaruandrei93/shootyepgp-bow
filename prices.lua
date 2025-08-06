@@ -142,6 +142,7 @@ local prices = {
     --- Temple of Ahn'Qiraj ---
     ---------------------------
   [20926] = {11,"T2.5"}; -- "Vek'nilash's Circlet"
+  [55555] = {23,"T2.5"}; -- "Ivonor, Maiden\'s Mallet"
   [20927] = {11,"T2.5"}; -- "Ouro's Intact Hide"
   [20928] = {10,"T2.5"}; -- "Qiraji Bindings of Command"
   [20929] = {19,"T2.5"}; -- "Carapace of the Old God"
