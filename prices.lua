@@ -137,6 +137,7 @@ local prices = {
   [23667] = {7,"T3"}; --"Spaulders of the Grand Crusader"
   [23668] = {7,"T3"}; --"Leggings of the Grand Crusader"
   [36666] = {0,"T3"}; --"Plagued Riding Spider"
+  [23006] = {7,"T3"}; --"Libram of Light"
 
     ---------------------------
     --- Temple of Ahn'Qiraj ---
