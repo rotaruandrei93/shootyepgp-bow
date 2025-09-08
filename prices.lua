@@ -214,7 +214,7 @@ local prices = {
   [21675] = {9,"T2.5"}; -- "Thick Qirajihide Belt"
   [21676] = {5,"T2.5"}; -- "Leggings of the Festering Swarm"
   [21677] = {8,"T2.5"}; -- "Ring of the Qiraji Fury"
-  [21678] = {4,"T2.5"}; -- "Necklace of Purity"
+  [21678] = {0,"T2.5"}; -- "Necklace of Purity"
   [21679] = {7,"T2.5"}; -- "Kalimdor's Revenge"
   [21680] = {8,"T2.5"}; -- "Vest of Swift Execution"
   [21681] = {10,"T2.5"}; -- "Ring of the Devoured"
@@ -263,6 +263,7 @@ local prices = {
   [23557] = {19,"T2.5"}; -- "Larvae of the Great Worm"
   [23558] = {4,"T2.5"}; -- "The Burrower's Shell"
   [23570] = {12,"T2.5"}; -- "Jom Gabbar"
+  [41077] = {16,"T2.5"}; -- "Yshgo'lar, Cowl of Fanatical Devotion"
   [36550] = {0,"T2.5"}; -- "Spotted Qiraji Battle Tank"
 
     -----------------------
