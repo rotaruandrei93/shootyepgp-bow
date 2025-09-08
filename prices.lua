@@ -263,7 +263,12 @@ local prices = {
   [23557] = {19,"T2.5"}; -- "Larvae of the Great Worm"
   [23558] = {4,"T2.5"}; -- "The Burrower's Shell"
   [23570] = {12,"T2.5"}; -- "Jom Gabbar"
-  [41077] = {16,"T2.5"}; -- "Yshgo'lar, Cowl of Fanatical Devotion"
+  [41077] = {23,"T2.5"}; -- "Yshgo'lar, Cowl of Fanatical Devotion"
+  [21613] = {13,"T2.5"}; -- "Wormhide Boots"
+  [21612] = {13,"T2.5"}; -- "Wormscale Stompers"
+  [21614] = {0,"T2.5"}; -- "Wormhide Protector"
+  [55554] = {17,"T2.5"}; -- "Carapace Handguards"
+  [55553] = {17,"T2.5"}; -- "Gloves of the Primordial Burrower"
   [36550] = {0,"T2.5"}; -- "Spotted Qiraji Battle Tank"
 
     -----------------------
