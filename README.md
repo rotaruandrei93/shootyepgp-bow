@@ -1,5 +1,5 @@
 # shootyepgp
-Guild Helper addon for EPGP loot system in WoW (1.12)
+Blades of Wrynn (BOW) Guild Helper addon for EPGP loot system desinged for TurtleWoW
 
 ## setup
 shootyepgp requires some modifications to guild permissions for officer notes by the guild leader.  
