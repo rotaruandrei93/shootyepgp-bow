@@ -201,7 +201,22 @@ function sepgp_bids:OnTooltipUpdate()
   local tm = self:BuildBidsTable()
   for i = 1, table.getn(tm) do
     local name, class, ep, gp, pr, main = unpack(tm[i])
-    local namedesc
+    
+    -- Use Main's EP/GP for PR when Enable Alts is active and this name is an alt via officer note
+    local __effectiveMain = sepgp and sepgp.GetEffectiveMain and sepgp:GetEffectiveMain(name)
+    if __effectiveMain then
+      if type(sepgp.GetEPGP) == "function" then
+        local __ep, __gp = sepgp:GetEPGP(__effectiveMain)
+        if __ep ~= nil then ep = __ep end
+        if __gp ~= nil then gp = __gp end
+      elseif sepgp_standings and sepgp_standings[__effectiveMain] then
+        ep = sepgp_standings[__effectiveMain].EP or ep
+        gp = sepgp_standings[__effectiveMain].GP or gp
+      end
+      pr = (gp and gp > 0) and (ep / gp) or pr
+      main = __effectiveMain
+    end
+local namedesc
     if (main) then
       namedesc = string.format("%s(%s)", C:Colorize(BC:GetHexColor(class), name), L["Alt"])
     else
@@ -240,7 +255,22 @@ function sepgp_bids:OnTooltipUpdate()
   local _,to = self:BuildBidsTable()
   for i = 1, table.getn(to) do
     local name, class, ep, gp, pr, main = unpack(to[i])
-    local namedesc
+    
+    -- Use Main's EP/GP for PR when Enable Alts is active and this name is an alt via officer note
+    local __effectiveMain = sepgp and sepgp.GetEffectiveMain and sepgp:GetEffectiveMain(name)
+    if __effectiveMain then
+      if type(sepgp.GetEPGP) == "function" then
+        local __ep, __gp = sepgp:GetEPGP(__effectiveMain)
+        if __ep ~= nil then ep = __ep end
+        if __gp ~= nil then gp = __gp end
+      elseif sepgp_standings and sepgp_standings[__effectiveMain] then
+        ep = sepgp_standings[__effectiveMain].EP or ep
+        gp = sepgp_standings[__effectiveMain].GP or gp
+      end
+      pr = (gp and gp > 0) and (ep / gp) or pr
+      main = __effectiveMain
+    end
+local namedesc
     if (main) then
       namedesc = string.format("%s%(%s%)", C:Colorize(BC:GetHexColor(class), name), L["Alt"])
     else
